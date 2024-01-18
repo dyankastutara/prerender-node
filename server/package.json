@@ -1,7 +1,7 @@
 {
   "name": "prerender-node",
   "version": "1.0.0",
-  "description": "Training prerender for react ceo",
+  "description": "Training prerender for nodejs connect to client react ceo",
   "main": "app.js",
   "repository": "git@github.com:dyankastutara/prerender-node.git",
   "author": "<dyankastutara19@gmail.com>",
