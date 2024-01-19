@@ -8,5 +8,9 @@ const app = express();
 app.use(prerender.set('prerenderToken', process.env.PRERENDER_TOKEN))
 
 app.listen(3001, () => {
-   console.log("App run on Port 3001")
+   console.log("App run on Port 3001");
+   console.log("first");
+   console.log("again");
+   console.log("change to top log");
+   console.log("test");
 })
