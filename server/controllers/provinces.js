@@ -1,5 +1,4 @@
 const axios = require('axios');
-
 module.exports = {
    provinces: async (req, res) => {
       let finalResult = {
@@ -16,11 +15,12 @@ module.exports = {
          finalResult.data = response.data;
          finalResult.success = true;
          finalResult.message = "Sukses ambil data";
-         res.status(200).json(response.data);
+         res.status(200).json(finalResult);
       }catch(e){
-         finalResult.data = e.response;
+         console.log(e.response);
+         finalResult.data = e;
          finalResult.message = "Gagal ambil data";
-         res.status(500).json(finalResult)
+         res.status(500).send(finalResult)
       }
    }
 }
