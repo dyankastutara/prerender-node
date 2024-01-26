@@ -18,6 +18,7 @@ module.exports = {
          finalResult.message = "Sukses ambil data";
          res.status(200).json(response.data);
       }catch(e){
+         finalResult.data = e.response;
          finalResult.message = "Gagal ambil data";
          res.status(500).json(finalResult)
       }
