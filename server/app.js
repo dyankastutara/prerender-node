@@ -2,8 +2,10 @@ const express = require('express');
 const bodyParser = require('body-parser');
 const cors = require('cors');
 const prerender= require('prerender-node');
-
+const routes = require('./routes');
 const app = express();
+
+app.use('/provinces', routes.provinces);
 
 app.use(prerender.set('prerenderToken', process.env.PRERENDER_TOKEN))
 
