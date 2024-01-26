@@ -8,7 +8,7 @@ module.exports = {
 					Authorization: process.env.API_KEY_KIRIMINAJA
 				}
 			})
-         res.status(200).send(response.data);
+         res.status(200).json(response.data);
       }catch(e){
          res.status(500).send(e)
       }
