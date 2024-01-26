@@ -4,6 +4,7 @@ const cors = require('cors');
 const routes = require('./routes');
 const app = express();
 
+app.use('/', routes.index);
 app.use('/provinces', routes.provinces);
 
 app.listen(3001, () => {

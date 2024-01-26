@@ -9,5 +9,6 @@ router.get('/', function(req, res, next) {
 });
 
 module.exports = {
-   provinces: require('./provinces')
+   provinces: require('./provinces'),
+   index: router
 }
